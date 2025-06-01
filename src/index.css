@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-stone-800 bg-stone-50;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    @apply font-display text-stone-900;
+  }
+  
+  .font-serif {
+    @apply tracking-wide;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-none transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-primary-800 text-primary-800 hover:bg-primary-800 hover:text-white font-medium py-3 px-6 rounded-none transition-all duration-300;
+  }
+  
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .nav-link {
+    @apply text-white/90 hover:text-white transition-colors uppercase tracking-wider text-sm font-medium;
+  }
+  
+  .parallax-section {
+    @apply relative overflow-hidden;
+  }
+  
+  .product-card {
+    @apply relative overflow-hidden;
+  }
+  
+  .product-image-container {
+    @apply overflow-hidden;
+  }
+  
+  .product-image {
+    @apply transition-transform duration-700 group-hover:scale-110;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .canvas-container {
+    @apply absolute inset-0 w-full h-full;
+  }
+  
+}
