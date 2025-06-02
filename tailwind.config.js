@@ -29,29 +29,13 @@ export default {
           800: '#774133',
           900: '#63392d',
           950: '#351c16',
-        },
-        accent: {
-          50: '#f9f8f4',
-          100: '#f1eee3',
-          200: '#e3d9c6',
-          300: '#d3c0a4',
-          400: '#c1a47f',
-          500: '#b48c63',
-          600: '#a67651',
-          700: '#8a5f45',
-          800: '#724e3d',
-          900: '#5e4234',
-          950: '#33221a',
-        },
+        }
       },
       fontFamily: {
         'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
         'serif': ['Cormorant Garamond', 'ui-serif', 'Georgia'],
         'display': ['Marcellus', 'serif'],
-      },
-      backgroundImage: {
-        'hero-pattern': "url('https://images.pexels.com/photos/4617267/pexels-photo-4617267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
-      },
+      }
     },
   },
   plugins: [],
